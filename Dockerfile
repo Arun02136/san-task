@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-COPY /home/git-demo/new.html /usr/share/nginx/html
+COPY /home/git-demo/new.html /usr/shares/nginx/html
 
 WORKDIR /app
 
