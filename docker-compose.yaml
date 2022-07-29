@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  web:
+    build: .
+    ports:
+      - "8000:5000"
+  html:
+    image: "httpd:latest"
+    ports:
+      - "90:80"
+  nginx:
+     image: "nginx:latest"
+     ports:
+       - "70:80"
